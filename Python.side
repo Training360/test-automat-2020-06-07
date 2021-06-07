@@ -1,0 +1,172 @@
+{
+  "id": "e04d455c-c990-4e95-85cf-0c9fe7f6189c",
+  "version": "2.0",
+  "name": "Python",
+  "url": "https://www.python.org",
+  "tests": [{
+    "id": "e114d58e-48c0-4c4b-a888-28262c039e56",
+    "name": "Style Guide",
+    "commands": [{
+      "id": "9363d06e-1481-41e8-b9a7-d772a1f69e09",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7c5f3cd-51c3-4750-be63-3f401ff2fb6e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1265x1269",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1021df5b-340a-4bc8-b4f8-ba2b20d7b956",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=PyFest",
+      "targets": [
+        ["linkText=Donate today!", "linkText"],
+        ["css=.button--dark", "css:finder"],
+        ["xpath=//a[contains(text(),'Donate today!')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/section/div/span[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://psfmember.org/civicrm/contribute/transact?reset=1&id=33')]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Donate today!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ff32342-690f-4ee2-8e46-590641840ae5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#id-search-field",
+      "targets": [
+        ["id=id-search-field", "id"],
+        ["name=q", "name"],
+        ["css=#id-search-field", "css:finder"],
+        ["xpath=//input[@id='id-search-field']", "xpath:attributes"],
+        ["xpath=//div[@id='touchnav-wrapper']/header/div/div/div/form/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18981c6f-ed07-4a1c-b79d-003d0918081d",
+      "comment": "",
+      "command": "type",
+      "target": "id=id-search-field",
+      "targets": [
+        ["id=id-search-field", "id"],
+        ["name=q", "name"],
+        ["css=#id-search-field", "css:finder"],
+        ["xpath=//input[@id='id-search-field']", "xpath:attributes"],
+        ["xpath=//div[@id='touchnav-wrapper']/header/div/div/div/form/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Style Guide"
+    }, {
+      "id": "017a063b-1423-435d-8ef7-e6f9c4c3b96a",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=submit", "name"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='touchnav-wrapper']/header/div/div/div/form/fieldset/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'GO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8998f6c7-1b80-4efc-a0a0-fbe01a770d07",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=PEP 8 -- Style Guide for Python Code",
+      "targets": [
+        ["linkText=PEP 8 -- Style Guide for Python Code", "linkText"],
+        ["css=li:nth-child(4) > h3 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'PEP 8 -- Style Guide for Python Code')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/section/form/ul/li[4]/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dev/peps/pep-0008/')]", "xpath:href"],
+        ["xpath=//li[4]/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'PEP 8 -- Style Guide for Python Code')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6ae67e4-4917-468c-8854-8dd0fcdd1ff3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-title",
+      "targets": [
+        ["css=.page-title", "css:finder"],
+        ["xpath=//div[@id='content']/div/section/article/header/h1", "xpath:idRelative"],
+        ["xpath=//header/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'PEP 8 -- Style Guide for Python Code')]", "xpath:innerText"]
+      ],
+      "value": "PEP 8 -- Style Guide for Python Code"
+    }, {
+      "id": "7e358508-0491-45e0-a10e-136e9837185a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.donate-button",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0146075e-d090-408c-bafa-503d55147279",
+    "name": "Dowloads",
+    "commands": [{
+      "id": "e0cc5bb5-e2e0-4f80-82cb-2563f0e590e6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "386f16c9-7587-4508-9c29-ce04ec06e712",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1265x1269",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c7340b4-a8d9-4874-b998-5362e816ef05",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=All releases",
+      "targets": [
+        ["linkText=All releases", "linkText"],
+        ["css=#downloads .element-1 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'All releases')]", "xpath:link"],
+        ["xpath=//li[@id='downloads']/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/downloads/')])[2]", "xpath:href"],
+        ["xpath=//li[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'All releases')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "251ae236-fd89-4ae4-ae18-59d1945b624b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.download-os-windows > .call-to-action",
+      "targets": [
+        ["css=.download-os-windows > .call-to-action", "css:finder"],
+        ["xpath=//div[@id='touchnav-wrapper']/header/div/div[2]/div/div[3]/h1", "xpath:idRelative"],
+        ["xpath=//div[3]/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Download the latest version for Windows')]", "xpath:innerText"]
+      ],
+      "value": "Download the latest version for Windows"
+    }]
+  }],
+  "suites": [{
+    "id": "b534f336-95df-4c5b-84d6-c4830f81e0fd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e114d58e-48c0-4c4b-a888-28262c039e56", "0146075e-d090-408c-bafa-503d55147279"]
+  }],
+  "urls": ["https://www.python.org/"],
+  "plugins": []
+}
