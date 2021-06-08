@@ -46,3 +46,10 @@ Ezután elérhető a [http://localhost:8080](http://localhost:8080) címen.
 
 * `docker build -t test-python --file Dockerfile-py .`
 * `docker run --network selenium-grid-network test-python`
+
+## NewMan futtatása Dockerben
+
+```shell
+docker build -t locations-newman  .
+docker run --network locations-network locations-newman
+```

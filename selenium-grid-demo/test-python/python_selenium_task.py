@@ -8,6 +8,6 @@ driver = webdriver.Remote(
    desired_capabilities={'browserName': 'firefox', 'javascriptEnabled': True})
 
 
-driver.get("https://www.python.org")
+driver.get("https://www.training360.com")
 
 driver.quit()
