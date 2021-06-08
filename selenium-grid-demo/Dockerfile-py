@@ -1,0 +1,5 @@
+FROM python:3.9.5-buster
+COPY test-python test-python
+WORKDIR test-python
+RUN pip install -Ur requirements.txt
+entrypoint ["python", "python_selenium_task.py"]

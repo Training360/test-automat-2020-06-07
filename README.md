@@ -27,6 +27,7 @@ Ezután elérhető a [http://localhost:8080](http://localhost:8080) címen.
 
 * VNC kliens feltelepítése: https://www.realvnc.com/en/connect/download/viewer/
 * VNC csatlakozás a `localhost:5900`-as címre
+* Alapértelmezett jelszó: `secret`
 
 ### Ha Side runnert akartok
 
@@ -40,3 +41,8 @@ Ezután elérhető a [http://localhost:8080](http://localhost:8080) címen.
 ### Ha fejlesztőeszközből
 
 * El kell indítani a `python_selenium_task` fájlt
+
+### Ha Python futtatás Dockerből legyen
+
+* `docker build -t test-python --file Dockerfile-py .`
+* `docker run --network selenium-grid-network test-python`
