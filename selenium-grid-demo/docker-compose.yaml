@@ -1,0 +1,36 @@
+version: "3"
+services:
+  selenium-hub:
+    image: selenium/hub:4.0.0-beta-4-prerelease-20210527
+    ports:
+      - "4442:4442"
+      - "4443:4443"
+      - "4444:4444"
+
+  firefox:
+    image: selenium/node-firefox:4.0.0-beta-4-prerelease-20210527
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+    ports:
+      - "5900:5900"
+    privileged: true
+
+  chrome_video:
+    image: selenium/video:ffmpeg-4.3.1-20210527
+    volumes:
+      - ./videos:/videos
+    depends_on:
+      - firefox
+    environment:
+      - DISPLAY_CONTAINER_NAME=firefox
+      - FILE_NAME=firefox_video.mp4
+
+networks:
+  default:
+    name: selenium-grid-network

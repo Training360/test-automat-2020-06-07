@@ -1,0 +1,62 @@
+{
+  "id": "7d9530d2-cb44-485f-9527-c31fb60081e1",
+  "version": "2.0",
+  "name": "Python",
+  "url": "https://www.python.org",
+  "tests": [{
+    "id": "4a67fc19-6383-4bcb-91f4-1718e3917cbd",
+    "name": "Get Started",
+    "commands": [{
+      "id": "e759fe85-a910-41db-b931-f2c125a1be6a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fec5cbff-b758-43d7-9f64-c7a020e80eec",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1294x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d705024-6297-41e7-ae78-a0ecc3499a5a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Getting Started",
+      "targets": [
+        ["linkText=Getting Started", "linkText"],
+        ["css=#about .element-3 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Getting Started')]", "xpath:link"],
+        ["xpath=//li[@id='about']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/about/gettingstarted/')]", "xpath:href"],
+        ["xpath=//nav/ul/li/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Getting Started')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0920b5c2-522d-4364-ae97-7c0b4affb2c2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-title",
+      "targets": [
+        ["css=.page-title", "css:finder"],
+        ["xpath=//div[@id='content']/div/section/article/header/h1", "xpath:idRelative"],
+        ["xpath=//header/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Python For Beginners')]", "xpath:innerText"]
+      ],
+      "value": "Python For Beginners"
+    }]
+  }],
+  "suites": [{
+    "id": "00e4dec9-b58c-4031-a3e1-cb17b57c851b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4a67fc19-6383-4bcb-91f4-1718e3917cbd"]
+  }],
+  "urls": ["https://www.python.org/"],
+  "plugins": []
+}

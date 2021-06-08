@@ -1,0 +1,4 @@
+FROM node:10
+RUN npm install -g selenium-side-runner 
+COPY sides sides
+entrypoint ["selenium-side-runner", "-c", "browserName=firefox", "-s", "http://selenium-hub:4444/wd/hub", "/sides/Python.side"]
